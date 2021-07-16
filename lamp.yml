@@ -1,0 +1,17 @@
+---
+
+version: "3"
+services:
+  db:
+   image: mysql:5
+   environment:
+    my_root_password: pammi
+  apache:
+   image: httpd
+   ports:
+    - 6666:80
+  php:
+   image: php:7.2-apache
+ 
+... 
+

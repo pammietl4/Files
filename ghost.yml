@@ -1,0 +1,15 @@
+---
+
+version: "3"
+services:
+   database:
+     image: mysql
+     environment:
+       MY_ROOT_PASSWORD: pammi
+   ghost:
+     image: ghost
+     ports:
+       - 2222:2368
+
+...
+
